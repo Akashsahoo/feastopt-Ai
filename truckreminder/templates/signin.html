@@ -1,0 +1,18 @@
+
+{% include 'base.html' %}
+{% load static %}
+<body>
+
+<form method="post">
+    {% csrf_token %}
+ {{ form.as_p }}
+    Email:   <input type="email" name="email"><br>
+    Password:<input type="password" name="password"  >
+    <button type="submit" value="signup" name="signup">signIn</button>
+
+
+</form>
+    </body>
+</html>
+
+

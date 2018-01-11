@@ -1,0 +1,20 @@
+
+{% include 'base.html' %}
+{% load staticfiles %}
+<body>
+
+<h1>U Can Sign Up here..</h1>
+<form method="post">
+    {% csrf_token %}
+    NAME:<input type="text" name="name"><br>
+    Email:   <input type="email" name="email"><br>
+    Password:<input type="password" name="password"  reuired><br>
+    <button type="submit" value="signup" name="signup">signup</button>
+    <h5>already registerd  <a href="{% url 'signin' %}">click here</a>  to Login</h5>
+
+
+</form>
+    </body>
+</html>
+
+
